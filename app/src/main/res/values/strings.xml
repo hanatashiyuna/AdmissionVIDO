@@ -4,6 +4,33 @@
     <string name="logo">logo</string>
     <string name="information">Thông Tin</string>
     <string name="home">Trang Chủ</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">back</string>
+    <string name="full_name">Họ và Tên:</string>
+    <string-array name="admissions_division">
+        <item>Khối A</item>
+        <item>Khối A1</item>
+        <item>Khối B</item>
+        <item>Khối C</item>
+        <item>Khối D</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+    <string-array name="area">
+        <item>KV1</item>
+        <item>KV2</item>
+        <item>KV2NT</item>
+        <item>KV3</item>
+    </string-array>
+    <string-array name="consultants">
+        <item>Cô Thu</item>
+        <item>Đoàn trường CD đến trường</item>
+        <item>Internet</item>
+        <item>Sách, báo, tivi</item>
+        <item>Người thân</item>
+    </string-array>
 </resources>

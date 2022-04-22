@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MethodOneFragment"
+    android:paddingTop="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.admissionvido.UI.Spinner.CustomSpinner
+            android:id="@+id/admission_division"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_spinner_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+Khối A: Toán, Vật lý, Hóa học.
+Khối A1: Toán, Vật lý, Tiếng Anh (bắt đầu từ năm 2012)
+Khối B: Toán, Hóa học, Sinh học
+Khối C: Ngữ văn, Lịch sử, Địa lý
+Khối D: Ngữ văn, Toán, Ngoại ngữ
+Khối D1: Ngữ văn, Toán, Tiếng Anh
+Khối D2: Ngữ văn, Toán, Tiếng Nga
+Khối D3: Ngữ văn, Toán, Tiếng Pháp-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
