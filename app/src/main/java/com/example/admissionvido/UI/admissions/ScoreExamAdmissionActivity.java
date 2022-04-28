@@ -47,12 +47,6 @@ public class ScoreExamAdmissionActivity extends AppCompatActivity implements Cus
         score_subject_three = findViewById(R.id.score_subject_three);
 
         next = findViewById(R.id.next);
-        next.setOnClickListener(view -> {
-            Intent intent = new Intent(ScoreExamAdmissionActivity.this, UserInforActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("score_subject", profile);
-            startActivity(intent);
-        });
 
         Bundle bundle = getIntent().getExtras();
         if(bundle != null){
@@ -111,6 +105,13 @@ public class ScoreExamAdmissionActivity extends AppCompatActivity implements Cus
                 });
             }
         }
+        next.setOnClickListener(view -> {
+            Intent intent = new Intent(ScoreExamAdmissionActivity.this, UserInforActivity.class);
+            Bundle nextBundle = new Bundle();
+            nextBundle.putSerializable("score_subject", profile);
+            startActivity(intent);
+        });
+
     }
     @SuppressLint("UseCompatLoadingForDrawables")
     @Override

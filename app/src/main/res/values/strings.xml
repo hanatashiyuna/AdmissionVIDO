@@ -9,6 +9,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back">back</string>
     <string name="full_name">Họ và Tên:</string>
+    <string name="scan">Quét Thông Tin</string>
+    <string name="input">Nhập Thông Tin</string>
+    <string name="non_profile">Bạn chưa có thông tin. Vui lòng tạo hồ sơ.</string>
+    <string name="public_user">Khách</string>
     <string-array name="admissions_division">
         <item>Khối A</item>
         <item>Khối A1</item>

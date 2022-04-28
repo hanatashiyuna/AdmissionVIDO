@@ -7,45 +7,52 @@
     tools:context=".UI.admissions.AdmissionsMethodActivity"
     android:paddingTop="30dp">
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:contentDescription="@string/back"
-        android:src="@drawable/ic_baseline_arrow_back_ios_new"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Chon phuong thuc xet tuyen: "
-        android:textStyle="normal"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back"
-        app:layout_constraintHorizontal_bias="0"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Chon phuong thuc xet tuyen: "
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/diemXetTuyen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Điểm Thi THPTQG"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:padding="10dp"
         android:layout_margin="20dp"
         android:background="@drawable/box_radius_btn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Điểm Thi THPTQG"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"/>
+        app:layout_constraintTop_toBottomOf="@+id/title_top"
+        app:layout_constraintVertical_bias=".35"/>
     <TextView
         android:id="@+id/danhGiaNangLuc"
         android:layout_width="match_parent"

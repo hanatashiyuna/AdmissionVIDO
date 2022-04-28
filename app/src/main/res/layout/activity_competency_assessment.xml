@@ -6,4 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".UI.admissions.CompetencyAssessmentActivity">
 
+    <LinearLayout
+        android:id="@+id/title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Diem"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="3"
+                android:inputType="numberDecimal"
+                android:digits="0123456789,."
+                android:gravity="right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiếp theo"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

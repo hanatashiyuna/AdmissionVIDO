@@ -49,8 +49,8 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
         University university = universityList.get(position);
         holder.universityImg.setImageResource(universityList.get(position).getImg());
         holder.universityName.setText(universityList.get(position).getUniversity());
+        holder.cardView.setRadius(20);
         holder.cardView.setOnClickListener(view -> iClickUniversity.onClickUniversity(university));
-
     }
 
     @Override
@@ -63,7 +63,6 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
         CardView cardView;
         ImageView universityImg;
         TextView universityName;
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
